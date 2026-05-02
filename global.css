@@ -418,8 +418,8 @@ p {
 
 /* Logo Image Styles */
 .nav-logo {
-  height: 250px;
-  width: 200px;
+  height: 300px;
+  width: auto;
   display: block;
 }
 
