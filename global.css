@@ -224,28 +224,35 @@ p {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 80px;
+    top: 100%; /* Opens exactly below the navbar */
     left: 0;
     width: 100%;
     background-color: var(--white);
     padding: 20px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
-
+  
   .nav-links.show {
     display: flex;
   }
-
+  
   .mobile-menu-btn {
     display: block;
   }
-
-  h1 {
-    font-size: 2.2rem;
+  
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  
+  .navbar .container {
+    min-height: 80px;
   }
-
-  h2 {
-    font-size: 1.8rem;
+  
+  .nav-logo {
+    height: 60px !important;
+  }
+  
+  .footer-logo {
+    height: 80px !important;
   }
 }
 
