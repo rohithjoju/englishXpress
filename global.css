@@ -123,8 +123,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 160px;
-  padding: 10px 20px;
+  padding: 20px;
 }
 
 .logo {
@@ -413,13 +412,13 @@ p {
 
 /* Logo Image Styles */
 .nav-logo {
-  height: 180px;
+  height: 260px;
   width: auto;
   display: block;
 }
 
 .footer-logo {
-  height: 130px;
+  height: 180px;
   width: auto;
   margin-bottom: 15px;
   border-radius: 8px;
