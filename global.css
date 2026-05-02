@@ -249,15 +249,17 @@ p {
   }
 
   .navbar .container {
-    min-height: 80px;
+    min-height: 120px;
   }
 
   .nav-logo {
-    height: 60px !important;
+    height: 100px !important;
+    width: auto !important;
   }
 
   .footer-logo {
-    height: 80px !important;
+    height: 100px !important;
+    width: auto !important;
   }
 }
 
