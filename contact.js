@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Construct mailto link
             const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0A%0D%0AMessage:%0D%0A${message}`;
-            const mailtoLink = `mailto:info@englishxpress.com?subject=${encodeURIComponent(subject)}&body=${body}`;
+            const mailtoLink = `mailto:englishxpress91@gmail.com?subject=${encodeURIComponent(subject)}&body=${body}`;
 
             // Open default email client
             window.location.href = mailtoLink;
