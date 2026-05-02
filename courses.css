@@ -1,0 +1,225 @@
+/* Courses Specific Styles */
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-light {
+    background-color: #F1F5F9;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+/* Page Banner */
+.page-banner {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    padding: 100px 0 60px;
+}
+
+.page-banner h1 {
+    color: var(--white);
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.page-banner p {
+    font-size: 1.2rem;
+    color: #CBD5E1;
+}
+
+/* Course Layout */
+.course-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.course-layout.reverse {
+    grid-template-columns: 1.2fr 1fr;
+}
+
+.course-layout.reverse .course-image {
+    order: 2;
+}
+
+.course-layout.reverse .course-info {
+    order: 1;
+}
+
+.course-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    transition: var(--transition);
+}
+
+.course-image img:hover {
+    transform: scale(1.02);
+}
+
+.course-badge {
+    display: inline-block;
+    background-color: rgba(245, 158, 11, 0.1);
+    color: var(--accent-color);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.course-info h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.course-info p {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 25px;
+}
+
+.course-highlights {
+    margin-bottom: 30px;
+}
+
+.course-highlights li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 1.05rem;
+    color: var(--text-main);
+}
+
+.course-highlights li i {
+    color: #10B981; /* Success Green */
+    margin-top: 4px;
+    font-size: 1.2rem;
+}
+
+/* Accordion */
+.accordion-container {
+    margin-bottom: 25px;
+}
+
+.accordion-item {
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    width: 100%;
+    text-align: left;
+    padding: 15px 20px;
+    background-color: var(--white);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.accordion-header:hover {
+    background-color: #F8FAFC;
+}
+
+.accordion-header i {
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active i {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: var(--white);
+}
+
+.accordion-content ul {
+    padding: 20px;
+    border-top: 1px solid #E2E8F0;
+}
+
+.accordion-content li {
+    margin-bottom: 10px;
+    color: var(--text-main);
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--accent-color) 0%, #EA580C 100%);
+    color: var(--white);
+}
+
+.cta-section h2 {
+    color: var(--white);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-large {
+    padding: 15px 35px;
+    font-size: 1.1rem;
+    background-color: var(--white);
+    color: var(--accent-color);
+    box-shadow: none;
+}
+
+.btn-large:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .course-layout, .course-layout.reverse {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .course-layout.reverse .course-image {
+        order: 1;
+    }
+    
+    .course-layout.reverse .course-info {
+        order: 2;
+    }
+}
